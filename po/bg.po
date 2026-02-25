@@ -1,13 +1,13 @@
 # Bulgarian translation of gegl po-file.
-# Copyright (C) 2025 Alexander Shopov <ash@kambanaria.org>.
+# Copyright (C) 2025, 2026 Alexander Shopov <ash@kambanaria.org>.
 # This file is distributed under the same license as the GIMP package.
-# Alexander Shopov <ash@kambanaria.org>, 2025.
+# Alexander Shopov <ash@kambanaria.org>, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: gegl master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/gegl/issues/\n"
-"POT-Creation-Date: 2025-12-13 16:15+0000\n"
-"PO-Revision-Date: 2025-12-23 18:14+0100\n"
+"POT-Creation-Date: 2026-02-15 22:03+0000\n"
+"PO-Revision-Date: 2026-02-25 09:18+0100\n"
 "Last-Translator: Alexander Shopov <ash@kambanaria.org>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
 "Language: bg\n"
@@ -267,7 +267,7 @@ msgstr ""
 
 #: gegl/gegl-enums.c:123 operations/external/lcms-from-profile.c:31
 msgid "Perceptual"
-msgstr ""
+msgstr "Перцептуално"
 
 #: gegl/gegl-enums.c:124
 msgid "Linear-premultiplied"
@@ -302,40 +302,40 @@ msgstr ""
 msgid "Always"
 msgstr ""
 
-#: gegl/gegl-init.c:425
+#: gegl/gegl-init.c:427
 msgid "Where GEGL stores its swap"
 msgstr ""
 
-#: gegl/gegl-init.c:430
+#: gegl/gegl-init.c:432
 msgid "Compression algorithm used for data stored in the swap"
 msgstr ""
 
-#: gegl/gegl-init.c:435
+#: gegl/gegl-init.c:437
 msgid "How much memory to (approximately) use for caching imagery"
 msgstr ""
 
-#: gegl/gegl-init.c:440
+#: gegl/gegl-init.c:442
 msgid "Default size of tiles in GeglBuffers"
 msgstr ""
 
-#: gegl/gegl-init.c:445
+#: gegl/gegl-init.c:447
 msgid "The count of pixels to compute simultaneously"
 msgstr ""
 
-#: gegl/gegl-init.c:450
+#: gegl/gegl-init.c:452
 msgid ""
 "The quality of rendering, a value between 0.0 (fast) and 1.0 (reference)"
 msgstr ""
 
-#: gegl/gegl-init.c:455
+#: gegl/gegl-init.c:457
 msgid "The number of concurrent processing threads to use"
 msgstr ""
 
-#: gegl/gegl-init.c:460
+#: gegl/gegl-init.c:462
 msgid "Disable OpenCL"
 msgstr ""
 
-#: gegl/gegl-init.c:472
+#: gegl/gegl-init.c:474
 msgid "Show GEGL Options"
 msgstr ""
 
@@ -775,7 +775,7 @@ msgstr ""
 #: operations/common-gpl3+/red-eye-removal.c:31
 #: operations/common-gpl3+/wind.c:60 operations/external/matting-levin.c:33
 msgid "Threshold"
-msgstr ""
+msgstr "Праг"
 
 #: operations/common/bloom.c:27
 msgid "Glow-area brightness threshold"
@@ -1089,7 +1089,7 @@ msgstr ""
 #: operations/common/color-rotate.c:84 operations/common/fattal02.c:39
 #: operations/common/mantiuk06.c:33 operations/common/noise-hsv.c:34
 #: operations/common/saturation.c:404 operations/common/styles.c:387
-#: operations/external/lcms-from-profile.c:35
+#: operations/common/vibrance.c:30 operations/external/lcms-from-profile.c:35
 #: operations/workshop/selective-hue-saturation.c:38
 msgid "Saturation"
 msgstr "Насищане"
@@ -1725,12 +1725,12 @@ msgstr ""
 #: operations/common/display.c:23 operations/external/sdl2-display.c:28
 #: operations/external/sdl-display.c:25
 msgid "Window title"
-msgstr ""
+msgstr "Заглавие на прозорец"
 
 #: operations/common/display.c:24 operations/external/sdl2-display.c:29
 #: operations/external/sdl-display.c:26
 msgid "Title to be given to output window"
-msgstr ""
+msgstr "Заглавие за изходния прозорец"
 
 #: operations/common/display.c:142
 msgid "Display"
@@ -1810,7 +1810,7 @@ msgstr ""
 #: operations/common/domain-transform.c:24 operations/external/jpg-save.c:28
 #: operations/external/webp-save.c:28
 msgid "Quality"
-msgstr ""
+msgstr "Качество"
 
 #: operations/common/domain-transform.c:25
 msgid ""
@@ -2135,7 +2135,7 @@ msgstr ""
 #: operations/common/gblur-1d.c:44 operations/common-cxx/warp.cc:37
 #: operations/external/text.c:32
 msgid "Size"
-msgstr ""
+msgstr "Размер"
 
 #: operations/common/gblur-1d.c:50 operations/common/pack.c:28
 #: operations/common/wavelet-blur-1d.c:36
@@ -4061,7 +4061,7 @@ msgstr ""
 #: operations/external/vector-fill.c:37 operations/external/vector-stroke.c:38
 #: operations/transform/transform.c:24 operations/transform/transform.c:62
 msgid "Transform"
-msgstr ""
+msgstr "Преобразуване"
 
 #: operations/common/recursive-transform.c:29
 msgid ""
@@ -4210,13 +4210,13 @@ msgstr "Път към файла за запазване."
 #: operations/external/png-save.c:34 operations/external/tiff-load.c:39
 #: operations/external/tiff-save.c:34
 msgid "Metadata"
-msgstr ""
+msgstr "Метаданни"
 
 #: operations/common/save.c:29 operations/core/load.c:34
 #: operations/external/jpg-save.c:45 operations/external/png-load.c:37
 #: operations/external/png-save.c:35
 msgid "Object providing image metadata"
-msgstr ""
+msgstr "Обект, който предоставя метаданните за изображението"
 
 #: operations/common/save.c:208
 msgid "Save"
@@ -5036,6 +5036,22 @@ msgstr ""
 msgid ""
 "Invert the value component, the result has the brightness inverted, keeping "
 "the color."
+msgstr ""
+
+#: operations/common/vibrance.c:24 operations/common/vibrance.c:77
+msgid "Vibrance"
+msgstr ""
+
+#: operations/common/vibrance.c:25
+msgid "Vibrance (chroma) adjustment"
+msgstr ""
+
+#: operations/common/vibrance.c:31
+msgid "Saturation scale factor"
+msgstr "Коефициент за промяна на насищането"
+
+#: operations/common/vibrance.c:79
+msgid "Adjusts the saturation and vibrance of the image."
 msgstr ""
 
 #: operations/common/vignette.c:32
@@ -7333,11 +7349,11 @@ msgstr ""
 msgid "Tile Height"
 msgstr ""
 
-#: operations/common-gpl3+/tile-glass.c:233
+#: operations/common-gpl3+/tile-glass.c:228
 msgid "Tile Glass"
 msgstr ""
 
-#: operations/common-gpl3+/tile-glass.c:238
+#: operations/common-gpl3+/tile-glass.c:233
 msgid "Simulate distortion caused by rectangular glass tiles"
 msgstr ""
 
@@ -7844,7 +7860,7 @@ msgstr ""
 #: operations/external/svg-load.c:27 operations/external/tiff-load.c:31
 #: operations/external/webp-load.c:27
 msgid "URI"
-msgstr ""
+msgstr "Адрес"
 
 #: operations/core/load.c:32
 msgid "URI of file to load."
@@ -7866,11 +7882,11 @@ msgstr ""
 
 #: operations/external/exr-save.cc:25
 msgid "path of file to write to."
-msgstr ""
+msgstr "пътят на файла, в който да се записва."
 
 #: operations/external/exr-save.cc:27
 msgid "tile size to use."
-msgstr ""
+msgstr "размер на плочката."
 
 #: operations/external/ff-load.c:31
 msgid "Path of video file to load"
@@ -7889,205 +7905,213 @@ msgid ""
 "Number of frames in video, updates at least when first frame has been "
 "decoded."
 msgstr ""
+"Брой кадри във видео, обновява се поне веднъж — след декодирането на първия "
+"кадър."
 
 #: operations/external/ff-load.c:42
 msgid "audio_sample_rate"
-msgstr ""
+msgstr "audio_sample_rate (честота на аудио отчети)"
 
 #: operations/external/ff-load.c:43
 msgid "audio_channels"
-msgstr ""
+msgstr "audio_channels (аудио канали)"
 
 #: operations/external/ff-load.c:45
 msgid "frame-rate"
-msgstr ""
+msgstr "frame-rate (честота на кадри)"
 
 #: operations/external/ff-load.c:46
 msgid "Frames per second, permits computing time vs frame"
-msgstr ""
+msgstr "Кадри в секунда, позволява изчисляване на време и кадри"
 
 #: operations/external/ff-load.c:50
 msgid "video-codec"
-msgstr ""
+msgstr "video-codec (видео кодек)"
 
 #: operations/external/ff-load.c:51
 msgid "audio-codec"
-msgstr ""
+msgstr "audio-codec (аудио кодек)"
 
 #: operations/external/ff-load.c:53 operations/external/ff-save.c:33
 msgid "audio"
-msgstr ""
+msgstr "аудио"
 
 #: operations/external/ff-load.c:885
 msgid "FFmpeg Frame Loader"
-msgstr ""
+msgstr "Зареждане от формат кадър на FFmpeg"
 
 #: operations/external/ff-load.c:887
 msgid "FFmpeg video frame importer."
-msgstr ""
+msgstr "Зареждане на изображение от формат FFmpeg."
 
 #: operations/external/ff-save.c:31 operations/external/png-save.c:27
 #: operations/external/ppm-save.c:26 operations/external/rgbe-save.c:27
 msgid "Target path and filename, use '-' for stdout."
-msgstr ""
+msgstr "Целеви път и име на файл. „-“ е за стандартния изход."
 
 #: operations/external/ff-save.c:34
 msgid "Audio codec"
-msgstr ""
+msgstr "Аудио кодек"
 
 #: operations/external/ff-save.c:35
 msgid ""
 "Audio codec to use, or auto to use a good default based on container format."
 msgstr ""
+"Аудио кодек, който де се ползва, или „auto“ за добър стандартен формат "
+"според контейнера."
 
 #: operations/external/ff-save.c:36
 msgid "audio sample rate"
-msgstr ""
+msgstr "честота на отчитане на аудиото"
 
 #: operations/external/ff-save.c:37
 msgid "-1 means autodetect on first audio fragment"
-msgstr ""
+msgstr "-1 е за автоматичен избор при първи аудио фрагмент"
 
 #: operations/external/ff-save.c:39
 msgid "audio bitrate in kb/s"
-msgstr ""
+msgstr "скорост на аудиото [kb/s]"
 
 #: operations/external/ff-save.c:40 operations/external/ff-save.c:48
 msgid "Target encoded video bitrate in kb/s"
-msgstr ""
+msgstr "Целева скорост на кодираното видео [kb/s]"
 
 #: operations/external/ff-save.c:42
 msgid "Frames/second"
-msgstr ""
+msgstr "Кадри/секунда"
 
 #: operations/external/ff-save.c:45
 msgid "Video codec"
-msgstr ""
+msgstr "Видео кодер"
 
 #: operations/external/ff-save.c:46
 msgid ""
 "Video codec to use, or auto to use a good default based on container format."
 msgstr ""
+"Кой видео кодер да се ползва или „auto“, за да се ползва стандартният според "
+"контейнера."
 
 #: operations/external/ff-save.c:47
 msgid "video bitrate in kb/s"
-msgstr ""
+msgstr "скорост на видеото [kb/s]"
 
 #: operations/external/ff-save.c:49
 msgid "Video bufsize"
-msgstr ""
+msgstr "Размер на буфера за видео"
 
 #: operations/external/ff-save.c:51
 msgid "Container format"
-msgstr ""
+msgstr "Формат на контейнера"
 
 #: operations/external/ff-save.c:52
 msgid "Container format to use, or auto to autodetect based on file extension."
 msgstr ""
+"Кой формат на контейнер да се ползва или „auto“ за автоматично определяне "
+"според разширението на файла."
 
 #: operations/external/ff-save.c:55
 msgid "global quality"
-msgstr ""
+msgstr "общо качество"
 
 #: operations/external/ff-save.c:58
 msgid "noise reduction"
-msgstr ""
+msgstr "подтискане на шума"
 
 #: operations/external/ff-save.c:59
 msgid "scenechange threshold"
-msgstr ""
+msgstr "праг за смяна на сцената"
 
 #: operations/external/ff-save.c:60
 msgid "video bitrate min"
-msgstr ""
+msgstr "минимална скорост на видеото"
 
 #: operations/external/ff-save.c:61
 msgid "video bitrate max"
-msgstr ""
+msgstr "максимална скорост на видеото"
 
 #: operations/external/ff-save.c:62
 msgid "video bitrate tolerance"
-msgstr ""
+msgstr "допуск на скоростта на видеото"
 
 #: operations/external/ff-save.c:65
 msgid "keyint-min"
-msgstr ""
+msgstr "keyint-min"
 
 #: operations/external/ff-save.c:66
 msgid "trellis"
-msgstr ""
+msgstr "trellis"
 
 #: operations/external/ff-save.c:67
 msgid "qmin"
-msgstr ""
+msgstr "qmin"
 
 #: operations/external/ff-save.c:68
 msgid "qmax"
-msgstr ""
+msgstr "qmax"
 
 #: operations/external/ff-save.c:69
 msgid "max_qdiff"
-msgstr ""
+msgstr "max_qdiff"
 
 #: operations/external/ff-save.c:70
 msgid "me_range"
-msgstr ""
+msgstr "me_range"
 
 #: operations/external/ff-save.c:71
 msgid "max_b_frames"
-msgstr ""
+msgstr "max_b_frames"
 
 #: operations/external/ff-save.c:72
 msgid "gop-size"
-msgstr ""
+msgstr "gop-size"
 
 #: operations/external/ff-save.c:73
 msgid "qcompress"
-msgstr ""
+msgstr "qcompress"
 
 #: operations/external/ff-save.c:74
 msgid "qblur"
-msgstr ""
+msgstr "qblur"
 
 #: operations/external/ff-save.c:75
 msgid "i-quant-factor"
-msgstr ""
+msgstr "i-quant-factor"
 
 #: operations/external/ff-save.c:76
 msgid "i-quant-offset"
-msgstr ""
+msgstr "i-quant-offset"
 
 #: operations/external/ff-save.c:77
 msgid "me-subpel-quality"
-msgstr ""
+msgstr "me-subpel-quality"
 
 #: operations/external/ff-save.c:1262
 msgid "FFmpeg Frame Saver"
-msgstr ""
+msgstr "Запазване във формат кадър на FFmpeg"
 
 #: operations/external/ff-save.c:1264
 msgid "FFmpeg video output sink"
-msgstr ""
+msgstr "Елемент-приемник за видео изхода на FFmpeg"
 
 #: operations/external/gif-load.c:36
 msgid "frame"
-msgstr ""
+msgstr "кадър"
 
 #: operations/external/gif-load.c:37
 msgid "frame number to decode"
-msgstr ""
+msgstr "номер на кадъра за декодиране"
 
 #: operations/external/gif-load.c:39
 msgid "Number of frames in gif animation"
-msgstr ""
+msgstr "Брой кадри в анимация gif"
 
 #: operations/external/gif-load.c:40
 msgid "frame-delay"
-msgstr ""
+msgstr "забавяне на кадрите"
 
 #: operations/external/gif-load.c:41
 msgid "Delay in ms for last decoded frame"
-msgstr ""
+msgstr "Забавяне [ms] за последния декодиран кадър"
 
 #: operations/external/gif-load.c:248
 msgid "GIF File Loader"
@@ -8104,67 +8128,68 @@ msgstr "Адрес на файла за зареждане"
 
 #: operations/external/jp2-load.c:128
 msgid "Unknown JPEG 2000 image format"
-msgstr ""
+msgstr "Непознат формат на изображение за JPEG 2000"
 
 #: operations/external/jp2-load.c:135
 msgid "Unable to open JPEG 2000 image"
-msgstr ""
+msgstr "Изображението във формат JPEG 2000 не може да се отвори"
 
 #: operations/external/jp2-load.c:142
 msgid "Unable to create output color profile"
-msgstr ""
+msgstr "Изходната цветова палитра не може да се създаде"
 
 #: operations/external/jp2-load.c:150
 msgid "Unable to convert image to sRGB color space"
-msgstr ""
+msgstr "Изображението не може да се преобразува към цветово пространство sRGB"
 
 #: operations/external/jp2-load.c:157
 #, c-format
 msgid "Unsupported non-RGB JPEG 2000 file with %d components"
-msgstr ""
+msgstr "Неподдържан файл, който не е RGB JPEG 2000, с %d компонента"
 
 #: operations/external/jp2-load.c:169
 #, c-format
 msgid "Unsupported JPEG 2000 file with depth %d"
-msgstr ""
+msgstr "Неподдържан файл, който е RGB JPEG 2000, с дълбочина на цвета %d"
 
 #: operations/external/jp2-load.c:195
 msgid "Components of JPEG 2000 input don't match"
-msgstr ""
+msgstr "Компонентите на входа в JPEG 2000 не съвпадат"
 
 #: operations/external/jp2-load.c:257
 msgid "could not create a new Jasper stream"
-msgstr ""
+msgstr "неуспешно създаване на нов поток за Jasper"
 
 #: operations/external/jp2-load.c:277 operations/external/jp2-load.c:279
 #, c-format
 msgid "failed to open JPEG 2000 from %s"
-msgstr ""
+msgstr "неуспешно отваряна на JPEG 2000 от %s"
 
 #: operations/external/jp2-load.c:293
 msgid "could not query JPEG 2000 file"
-msgstr ""
+msgstr "файлът в JPEG 2000 не може да се запита"
 
 #: operations/external/jp2-load.c:349
 msgid "One or more of R, G, B components are missing"
-msgstr ""
+msgstr "Липсва поне един от компонентите R, G, B"
 
 #: operations/external/jp2-load.c:357
 msgid "One or more of R, G, B components have signed data"
-msgstr ""
+msgstr "Поне един от компонентите R, G, B е с данни със знак"
 
 #: operations/external/jp2-load.c:390
 #, c-format
 msgid "Error reading row %d component %d"
-msgstr ""
+msgstr "Грешка при четене на ред %d от компонент %d"
 
 #: operations/external/jp2-load.c:525
 msgid "JPEG 2000 File Loader"
-msgstr ""
+msgstr "Зареждане от формат JPEG 2000"
 
 #: operations/external/jp2-load.c:527
 msgid "JPEG 2000 image loader using jasper."
 msgstr ""
+"Зареждане на изображение от формат JPEG 2000 чрез библиотеката „jasper“."
 
 #: operations/external/jpg-load.c:27
 msgid "URI of file to load"
@@ -8181,87 +8206,88 @@ msgstr "Зареждане на файлове във формат JPEG чрез
 #: operations/external/jpg-save.c:26 operations/external/npy-save.c:32
 #: operations/external/tiff-save.c:26 operations/external/webp-save.c:26
 msgid "Target path and filename, use '-' for stdout"
-msgstr ""
+msgstr "Целеви път и име на файл, „-“ за стандартен изход"
 
 #: operations/external/jpg-save.c:29
 msgid "JPEG compression quality (between 1 and 100)"
-msgstr ""
+msgstr "Качество на компресия на JPEG (между 1 и 100)"
 
 #: operations/external/jpg-save.c:32
 msgid "Smoothing"
-msgstr ""
+msgstr "Заглаждане"
 
 #: operations/external/jpg-save.c:33
 msgid "Smoothing factor from 1 to 100; 0 disables smoothing"
-msgstr ""
+msgstr "Коефициент на заглаждане от 1 до 100. 0 изключва заглаждането"
 
 #: operations/external/jpg-save.c:36
 msgid "Optimize"
-msgstr ""
+msgstr "Оптимизиране"
 
 #: operations/external/jpg-save.c:37
 msgid "Use optimized huffman tables"
-msgstr ""
+msgstr "Ползване на оптимални таблици по Хъфман"
 
 #: operations/external/jpg-save.c:38
 msgid "Progressive"
-msgstr ""
+msgstr "Прогресивно"
 
 #: operations/external/jpg-save.c:39
 msgid "Create progressive JPEG images"
-msgstr ""
+msgstr "Създаване на прогресивно JPEG изображение"
 
 #: operations/external/jpg-save.c:41
 msgid "Grayscale"
-msgstr ""
+msgstr "Степени на сивото"
 
 #: operations/external/jpg-save.c:42
 msgid "Create a grayscale (monochrome) image"
-msgstr ""
+msgstr "Създаване на едноцветно изображение в степени на сивото"
 
 #: operations/external/jpg-save.c:521
 msgid "JPEG File Saver"
-msgstr ""
+msgstr "Запазване във формат JPEG"
 
 #: operations/external/jpg-save.c:523
 msgid "JPEG image saver, using libjpeg"
-msgstr ""
+msgstr "Запазване на изображения във формат JPEG чрез библиотеката „libjpeg“"
 
 #: operations/external/lcms-from-profile.c:24
 msgid "Source Profile"
-msgstr ""
+msgstr "Профил-източник"
 
 #: operations/external/lcms-from-profile.c:25
 msgid "The cmsHPROFILE corresponding to the ICC profile for the input data."
 msgstr ""
+"Профилът по cmsHPROFILE, който отговаря на профила по ICC за входните данни."
 
 #: operations/external/lcms-from-profile.c:33
 msgid "Relative Colorimetric"
-msgstr ""
+msgstr "Относително колориметрично"
 
 #: operations/external/lcms-from-profile.c:37
 msgid "Absolute Colorimetric"
-msgstr ""
+msgstr "Абсолютно колориметрично"
 
 #: operations/external/lcms-from-profile.c:41
 msgid "Rendering intent"
-msgstr ""
+msgstr "Цел на изобразяване"
 
 #: operations/external/lcms-from-profile.c:44
 msgid "The rendering intent to use in the conversion."
-msgstr ""
+msgstr "Цел на изобразяване за преобразуването."
 
 #: operations/external/lcms-from-profile.c:46
 msgid "Black point compensation"
-msgstr ""
+msgstr "Компенсиране по черната точка"
 
 #: operations/external/lcms-from-profile.c:48
 msgid "Convert using black point compensation."
-msgstr ""
+msgstr "Преобразуване с ползване на компенсиране по черната точка."
 
 #: operations/external/lcms-from-profile.c:244
 msgid "LCMS From Profile"
-msgstr ""
+msgstr "LCMS от профила"
 
 #: operations/external/lcms-from-profile.c:247
 msgid ""
@@ -8269,56 +8295,62 @@ msgid ""
 "The buffer's data will then be correctly managed by GEGL for further "
 "processing."
 msgstr ""
+"Преобразуване на входните данни от цветови профил по ICC към добре дефиниран "
+"профил на babl (Little Color Management System). Данните от буфера ще се "
+"управляват правилно по-нататък от GEGL."
 
 #: operations/external/matting-levin.c:25
 msgid "Epsilon"
-msgstr ""
+msgstr "Епсилон"
 
 #: operations/external/matting-levin.c:26
 msgid "Log of the error weighting"
-msgstr ""
+msgstr "Логаритмична грешка с тегло"
 
 #: operations/external/matting-levin.c:30
 msgid "Radius of the processing window"
-msgstr ""
+msgstr "Радиус на прозореца за обработка"
 
 #: operations/external/matting-levin.c:34
 msgid "Alpha threshold for multilevel processing"
-msgstr ""
+msgstr "Праг на прозрачността за обработка на много нива"
 
 #: operations/external/matting-levin.c:39
 msgid "Trimap influence factor"
-msgstr ""
+msgstr "Коефициент за влияние на трикартата"
 
 #: operations/external/matting-levin.c:42
 msgid "Number of downsampled levels to use"
-msgstr ""
+msgstr "Брой нива на понижено отчитане"
 
 #: operations/external/matting-levin.c:45
 msgid "Active levels"
-msgstr ""
+msgstr "Активни нива"
 
 #: operations/external/matting-levin.c:46
 msgid "Number of levels to perform solving"
-msgstr ""
+msgstr "Брой нива за изчисляването"
 
 #: operations/external/matting-levin.c:1477
 msgid "Matting Levin"
-msgstr ""
+msgstr "Отделяне по Levin"
 
 #: operations/external/matting-levin.c:1480
 msgid ""
 "Given a sparse user supplied tri-map and an input image, create a foreground "
 "alpha mat. Set white as selected, black as unselected, for the tri-map."
 msgstr ""
+"Отделяне по прозрачност на предния план на изображение по трикарта (карта за "
+"предното изображение, фона и неизвестното), зададена от потребителя и входно "
+"изображение. Бялото се счита за избрано, черното за неизбрано в трикартата."
 
 #: operations/external/npd.c:23
 msgid "Model"
-msgstr ""
+msgstr "Модел"
 
 #: operations/external/npd.c:24
 msgid "Model - basic element we operate on"
-msgstr ""
+msgstr "Модел — основният елемент за работа"
 
 #: operations/external/npd.c:26
 msgid "Square Size"
@@ -8326,47 +8358,49 @@ msgstr "Размер на квадрата"
 
 #: operations/external/npd.c:28
 msgid "Size of an edge of square the mesh consists of"
-msgstr ""
+msgstr "Размер на страната на квадрата за решетката"
 
 #: operations/external/npd.c:30
 msgid "Rigidity"
-msgstr ""
+msgstr "Твърдост"
 
 #: operations/external/npd.c:32
 msgid "The number of deformation iterations"
-msgstr ""
+msgstr "Брой итерации на деформацията"
 
 #: operations/external/npd.c:34
 msgid "ASAP Deformation"
-msgstr ""
+msgstr "Деформиране ASAP"
 
 #: operations/external/npd.c:35
 msgid "ASAP deformation is performed when TRUE, ARAP deformation otherwise"
 msgstr ""
+"Когато е ИСТИНА, деформацията е ASAP (възможно най-симетрична), иначе е ARAP "
+"(възможно най-твърда)"
 
 #: operations/external/npd.c:37
 msgid "MLS Weights"
-msgstr ""
+msgstr "Тегла за МНМК"
 
 #: operations/external/npd.c:38
 msgid "Use MLS weights"
-msgstr ""
+msgstr "Използване на тегла за метода на най-малките квадрати (МНМК)"
 
 #: operations/external/npd.c:40
 msgid "MLS Weights Alpha"
-msgstr ""
+msgstr "Алфа за теглата за МНМК"
 
 #: operations/external/npd.c:42
 msgid "Alpha parameter of MLS weights"
-msgstr ""
+msgstr "Параметърът алфа за теглата за метода на най-малките квадрати (МНМК)"
 
 #: operations/external/npd.c:44
 msgid "Preserve Model"
-msgstr ""
+msgstr "Запазване на модела"
 
 #: operations/external/npd.c:45
 msgid "When TRUE the model will not be freed"
-msgstr ""
+msgstr "Когато е ИСТИНА, моделът не се изчиства"
 
 #: operations/external/npd.c:50 operations/transform/transform-core.c:235
 #: operations/workshop/ditto.c:29
@@ -8375,15 +8409,15 @@ msgstr "Вътрешно ползвана логика за отчети"
 
 #: operations/external/npd.c:258
 msgid "Performs n-point image deformation"
-msgstr ""
+msgstr "Деформиране на изображението по n-точки"
 
 #: operations/external/npy-save.c:215
 msgid "NumPy File Saver"
-msgstr ""
+msgstr "Запазване  във формат NumPy"
 
 #: operations/external/npy-save.c:217
 msgid "NumPy (Numerical Python) image saver"
-msgstr ""
+msgstr "Запазване на изображения във формат NumPy (Python за числови методи)"
 
 #: operations/external/path.c:26
 msgid "Fill Color"
@@ -8391,7 +8425,7 @@ msgstr "Цвят на запълване"
 
 #: operations/external/path.c:27
 msgid "Color of paint to use for filling, use 0 opacity to disable filling"
-msgstr ""
+msgstr "Цвят за запълване. Запълването се изключва с 0 за плътност"
 
 #: operations/external/path.c:29 operations/workshop/external/spyrograph.c:74
 msgid "Stroke Color"
@@ -8417,9 +8451,7 @@ msgstr "Плътност на щриха"
 msgid ""
 "Opacity of stroke, note, does not behave like SVG since at the moment "
 "stroking is done using an airbrush tool"
-msgstr ""
-"Плътност на щриха, това не работи като в SVG, защото в момента щриховането "
-"ползва аерографа"
+msgstr "Плътност на щриха, това не работи като в SVG, защото в момента щриховането ползва аерограф"
 
 #: operations/external/path.c:41 operations/workshop/external/spyrograph.c:86
 msgid "Hardness of the brush, 0.0 for a soft brush, 1.0 for a hard brush"
@@ -8427,15 +8459,17 @@ msgstr "Твърдост на четката, от 0,0 за мека четка 
 
 #: operations/external/path.c:44
 msgid "Fill rule"
-msgstr ""
+msgstr "Правило за запълване"
 
 #: operations/external/path.c:45
 msgid "How to determine what to fill (nonzero|evenodd)"
 msgstr ""
+"Как се определя какво да се запълни „nonzero“ (ненулево)/„evenodd“ (четно-"
+"нечетно)"
 
 #: operations/external/path.c:48
 msgid "SVG style description of transform"
-msgstr ""
+msgstr "Описание на преобразуването по SVG"
 
 #: operations/external/path.c:50
 msgid "Fill opacity"
@@ -8443,29 +8477,29 @@ msgstr "Плътност на запълването"
 
 #: operations/external/path.c:51
 msgid "The fill opacity to use"
-msgstr "Каква плътноста на запълването да се ползва"
+msgstr "Каква плътност на запълване да се ползва"
 
 #: operations/external/path.c:54 operations/external/vector-fill.c:40
 #: operations/external/vector-stroke.c:41
 msgid "Vector"
-msgstr ""
+msgstr "Вектор"
 
 #: operations/external/path.c:55 operations/external/vector-fill.c:41
 #: operations/external/vector-stroke.c:42
 msgid "A GeglVector representing the path of the stroke"
-msgstr ""
+msgstr "Вектор като GeglVector, който представлява пътеката на щриха"
 
 #: operations/external/path.c:584
 msgid "Render Path"
-msgstr ""
+msgstr "Пътека за изобразяване"
 
 #: operations/external/path.c:591
 msgid "Renders a brush stroke"
-msgstr ""
+msgstr "Изобразяване на щрих с четката"
 
 #: operations/external/pdf-load.c:25
 msgid "file to load"
-msgstr ""
+msgstr "файл за зареждане"
 
 #: operations/external/pdf-load.c:28
 msgid "uri of file to load"
@@ -8473,63 +8507,63 @@ msgstr "адрес на файла за зареждане"
 
 #: operations/external/pdf-load.c:30
 msgid "Page"
-msgstr ""
+msgstr "Страница"
 
 #: operations/external/pdf-load.c:31
 msgid "Page to render"
-msgstr ""
+msgstr "Страница за изобразяване"
 
 #: operations/external/pdf-load.c:34
 msgid "Pages"
-msgstr ""
+msgstr "Страници"
 
 #: operations/external/pdf-load.c:35
 msgid "Total pages, provided as a visual read-only property"
-msgstr ""
+msgstr "Общ брой страници, свойството е само за четене"
 
 #: operations/external/pdf-load.c:38
 msgid "PPI"
-msgstr ""
+msgstr "PPI"
 
 #: operations/external/pdf-load.c:39
 msgid "Point/pixels per inch"
-msgstr ""
+msgstr "Точки/пиксели на инч"
 
 #: operations/external/pdf-load.c:43
 msgid "Password"
-msgstr ""
+msgstr "Парола"
 
 #: operations/external/pdf-load.c:44
 msgid "Password to use for decryption of PDF, or blank for none"
-msgstr ""
+msgstr "Парола за дешифрирането на PDF. Оставете празно за без парола"
 
 #: operations/external/pdf-load.c:242
 msgid "pdf loader"
-msgstr ""
+msgstr "Зареждане от PDF"
 
 #: operations/external/pdf-load.c:244
 msgid "PDF page decoder"
-msgstr ""
+msgstr "Декодер на страница от PDF"
 
 #: operations/external/pixbuf.c:26 operations/external/save-pixbuf.c:29
 msgid "Pixbuf"
-msgstr ""
+msgstr "Буфер с пиксели"
 
 #: operations/external/pixbuf.c:27
 msgid "GdkPixbuf to use"
-msgstr ""
+msgstr "GdkPixbuf, който да се ползва"
 
 #: operations/external/pixbuf.c:109
 msgid "GdkPixbuf Source"
-msgstr ""
+msgstr "Източник на GdkPixbuf"
 
 #: operations/external/pixbuf.c:112
 msgid "Uses the GdkPixbuf located at the memory location in <em>pixbuf</em>."
-msgstr ""
+msgstr "Ползва GdkPixbuf в паметта, на адрес в <em>буфера с пиксели</em>."
 
 #: operations/external/png-load.c:35
 msgid "URI for file to load."
-msgstr ""
+msgstr "Адрес на файл за зареждане."
 
 #: operations/external/png-load.c:680
 msgid "PNG File Loader"
@@ -8541,11 +8575,11 @@ msgstr "Зареждане на изображения във формат PNG."
 
 #: operations/external/png-save.c:28
 msgid "Compression"
-msgstr ""
+msgstr "Компресия"
 
 #: operations/external/png-save.c:29
 msgid "PNG compression level from 1 to 9"
-msgstr ""
+msgstr "Ниво на компресия на PNG: от 1 до 9"
 
 #: operations/external/png-save.c:31 operations/external/ppm-save.c:29
 #: operations/external/tiff-save.c:27
@@ -8554,19 +8588,19 @@ msgstr "Дълбочина на цвета"
 
 #: operations/external/png-save.c:32 operations/external/ppm-save.c:30
 msgid "8 and 16 are the currently accepted values."
-msgstr ""
+msgstr "В момента се приемат стойностите 8 и 16."
 
 #: operations/external/png-save.c:434
 msgid "PNG File Saver"
-msgstr ""
+msgstr "Запазване във формат PNG"
 
 #: operations/external/png-save.c:436
 msgid "PNG image saver, using libpng"
-msgstr ""
+msgstr "Запазване на изображения във формат PNG чрез библиотеката „libpng“"
 
 #: operations/external/ppm-load.c:28
 msgid "URI of image to load."
-msgstr ""
+msgstr "Адрес на изображението за зараждане."
 
 #: operations/external/ppm-load.c:473
 msgid "PPM File Loader"
@@ -8578,35 +8612,35 @@ msgstr "Зареждане на изображения във формат PPM."
 
 #: operations/external/ppm-save.c:28
 msgid "Raw format"
-msgstr ""
+msgstr "Необработен формат"
 
 #: operations/external/ppm-save.c:201
 msgid "PPM File Saver"
-msgstr ""
+msgstr "Запазване във формат PPM"
 
 #: operations/external/ppm-save.c:204
 msgid "PPM image saver (Portable pixmap saver.)"
-msgstr ""
+msgstr "Запазване на изображения във формат PPM"
 
 #: operations/external/raw-load.c:28
 msgid "Camera RGB"
-msgstr ""
+msgstr "RGB на камера"
 
 #: operations/external/raw-load.c:29
 msgid "s RGB"
-msgstr ""
+msgstr "sRGB"
 
 #: operations/external/raw-load.c:30
 msgid "Adobe RGB compatible"
-msgstr ""
+msgstr "Съвместимо с Adobe RGB"
 
 #: operations/external/raw-load.c:31
 msgid "Wide gamut RGB"
-msgstr ""
+msgstr "RGB с широка гама"
 
 #: operations/external/raw-load.c:32
 msgid "ProPhoto RGB"
-msgstr ""
+msgstr "ProPhoto RGB"
 
 #: operations/external/raw-load.c:39
 msgid "Color space"
@@ -8614,67 +8648,73 @@ msgstr "Цветово пространство"
 
 #: operations/external/raw-load.c:41
 msgid "Color space to use for loaded data"
-msgstr ""
+msgstr "Цветово пространство за заредените данни"
 
 #: operations/external/raw-load.c:285
 msgid "libraw File Loader"
-msgstr ""
+msgstr "Зареждане от формат libraw"
 
 #: operations/external/rgbe-load.c:136
 msgid "RGBE File Loader"
-msgstr ""
+msgstr "Зареждане от формат RGBE"
 
 #: operations/external/rgbe-load.c:138
 msgid "RGBE image loader (Radiance HDR format)."
-msgstr ""
+msgstr "Зареждане на изображение от формат RGBE (Radience HDR)."
 
 #: operations/external/rgbe-save.c:85
 msgid "RGBE File Saver"
-msgstr ""
+msgstr "Запазване във формат RGBE"
 
 #: operations/external/rgbe-save.c:88
 msgid "RGBE image saver (Radiance HDR format)"
-msgstr ""
+msgstr "Запазване на изображения във формат RGBE (Radiance HDR)"
 
 #: operations/external/save-pixbuf.c:30
 msgid "The output pixbuf produced by process is stored in this property"
 msgstr ""
+"Изходният буфер с пиксели, произведени от процеса, се съхраняват в това "
+"свойство"
 
 #: operations/external/save-pixbuf.c:110
 msgid "Store in GdkPixbuf"
-msgstr ""
+msgstr "Съхраняване в GdkPixbuf"
 
 #: operations/external/save-pixbuf.c:112
 msgid "Store image in a GdkPixbuf."
-msgstr ""
+msgstr "Съхраняване на изображение в GdkPixbuf."
 
 #: operations/external/sdl2-display.c:197
 msgid "SDL2 Display"
-msgstr ""
+msgstr "Прозорец на SDL2"
 
 #: operations/external/sdl2-display.c:200
 msgid ""
 "Displays the input buffer in an SDL2 window (restricted to one display op/"
 "process, due to SDL2 implementation issues)."
 msgstr ""
+"Изобразяване на входния буфер в прозорец на SDL (поддържа се един екран на "
+"процес поради ограничение на SDL)."
 
 #: operations/external/sdl-display.c:27
 msgid "Icon title"
-msgstr ""
+msgstr "Заглавие на икона"
 
 #: operations/external/sdl-display.c:28
 msgid "Icon to be used for output window"
-msgstr ""
+msgstr "Икона за изходния прозорец"
 
 #: operations/external/sdl-display.c:169
 msgid "SDL Display"
-msgstr ""
+msgstr "Прозорец на SDL"
 
 #: operations/external/sdl-display.c:172
 msgid ""
 "Displays the input buffer in an SDL window (restricted to one display op/"
 "process, due to SDL implementation issues)."
 msgstr ""
+"Изобразяване на входния буфер в прозорец на SDL (поддържа се един екран на "
+"процес поради ограничение на SDL)."
 
 #: operations/external/svg-load.c:31 operations/external/v4l.c:29
 #: operations/workshop/external/v4l2.c:27
@@ -8688,32 +8728,32 @@ msgstr "Височина на изходното изображение"
 
 #: operations/external/svg-load.c:308
 msgid "SVG File Loader"
-msgstr ""
+msgstr "Зареждане от формат SVG"
 
 #. not hidden because it has extra API
 #: operations/external/svg-load.c:310
 msgid "Load an SVG file using librsvg"
-msgstr ""
+msgstr "Зареждане на изображение от формат SVG чрез библиотеката „librsvg“."
 
 #: operations/external/text.c:25
 msgid "Text"
-msgstr ""
+msgstr "Текст"
 
 #: operations/external/text.c:26
 msgid "String to display (utf8)"
-msgstr ""
+msgstr "Низ за изобразяване (в UTF-8)"
 
 #: operations/external/text.c:29
 msgid "Font family"
-msgstr ""
+msgstr "Фамилия на шрифта"
 
 #: operations/external/text.c:30
 msgid "Font family (utf8)"
-msgstr ""
+msgstr "Фамилия на шрифта (в UTF-8)"
 
 #: operations/external/text.c:33
 msgid "Font size in pixels."
-msgstr ""
+msgstr "Размер на шрифта [пиксел]."
 
 #. TRANSLATORS: the string 'black' should not be translated
 #: operations/external/text.c:39
@@ -8722,23 +8762,27 @@ msgstr "Цвят на текста (стандартно е черен)"
 
 #: operations/external/text.c:41
 msgid "Wrap width"
-msgstr ""
+msgstr "Широчина за пренасянето"
 
 #: operations/external/text.c:42
 msgid ""
 "Sets the width in pixels at which long lines will wrap. Use -1 for no "
 "wrapping."
 msgstr ""
+"Широчина в пиксели, при която дългите редове се пренасят. -1 означава без "
+"пренасяне."
 
 #: operations/external/text.c:46
 msgid "Wrap height"
-msgstr ""
+msgstr "Височина за пренасянето"
 
 #: operations/external/text.c:47
 msgid ""
 "Sets the height in pixels according to which the text is vertically "
 "justified. Use -1 for no vertical justification."
 msgstr ""
+"Височина в пиксели, при която текстът се подравнява вертикално. -1 означава "
+"без вертикално подравняване."
 
 #: operations/external/text.c:53
 msgid "Justification"
@@ -8746,8 +8790,7 @@ msgstr "Подравняване"
 
 #: operations/external/text.c:55
 msgid "Alignment for multi-line text (0=Left, 1=Center, 2=Right)"
-msgstr ""
-"Подравняване на текст от множество редове (0=отлаво, 1=центрирано, 2=отдясно)"
+msgstr "Подравняване на текст от множество редове (0=отляво, 1=центрирано, 2=отдясно)"
 
 #: operations/external/text.c:57
 msgid "Vertical justification"
@@ -8755,67 +8798,69 @@ msgstr "Вертикално подравняване"
 
 #: operations/external/text.c:59
 msgid "Vertical text alignment (0=Top, 1=Middle, 2=Bottom)"
-msgstr ""
+msgstr "Вертикално подравняване на текста (0=отгоре, 1=по средата, 2=отдолу)"
 
 #: operations/external/text.c:62
 msgid "Rendered width in pixels. (read only)"
-msgstr ""
+msgstr "Широчина на изобразеното [пиксели] (само за четене)."
 
 #: operations/external/text.c:64
 msgid "Rendered height in pixels. (read only)"
-msgstr ""
+msgstr "Височина на изобразеното [пиксели] (само за четене)."
 
 #: operations/external/text.c:383
 msgid "Render Text"
-msgstr ""
+msgstr "Изобразяване на текст"
 
 #: operations/external/text.c:387
 msgid "Display a string of text using pango and cairo."
-msgstr ""
+msgstr "Изобразяване на текст чрез библиотеките pango и cairo."
 
 #: operations/external/tiff-load.c:34
 msgid "Directory"
-msgstr ""
+msgstr "Папка"
 
 #: operations/external/tiff-load.c:35
 msgid "Image file directory (subfile)"
-msgstr ""
+msgstr "Папка с изображения (подфайлове)"
 
 #: operations/external/tiff-load.c:40 operations/external/tiff-save.c:35
 msgid "Object to receive image metadata"
-msgstr ""
+msgstr "Обект, който да получи метаданните на изображението"
 
 #: operations/external/tiff-load.c:1036
 msgid "TIFF File Loader"
-msgstr ""
+msgstr "Зареждане от формат TIFF"
 
 #: operations/external/tiff-load.c:1038
 msgid "TIFF image loader using libtiff"
-msgstr ""
+msgstr "Зареждане на изображение от формат TIFF чрез библиотеката „libtiff“."
 
 #: operations/external/tiff-save.c:28
 msgid "-1, 8, 16, 32 and 64 are the currently accepted values, -1 means auto"
-msgstr ""
+msgstr "Текущо се приемат стойностите -1, 8, 16, 32 и 64. -1 за автоматично"
 
 #: operations/external/tiff-save.c:30
 msgid "use floating point"
-msgstr ""
+msgstr "плаваща запетая"
 
 #: operations/external/tiff-save.c:31
 msgid "floating point -1 means auto, 0 means integer, 1 means float."
 msgstr ""
+"ползване на плаваща запетая: -1 за автоматично, 0 за цели числа, 1 за числа "
+"с плаваща запетая."
 
 #: operations/external/tiff-save.c:825
 msgid "TIFF File Saver"
-msgstr ""
+msgstr "Запазване на изображения във формат TIFF"
 
 #: operations/external/tiff-save.c:827
 msgid "TIFF image saver using libtiff"
-msgstr ""
+msgstr "Запазване на изображения във формат TIFF чрез библиотеката „libtiff“"
 
 #: operations/external/v4l.c:27
 msgid "Path to v4l device"
-msgstr ""
+msgstr "Път към устройство за v4l"
 
 #: operations/external/v4l.c:34 operations/workshop/external/v4l2.c:30
 msgid "Frame"
@@ -8835,62 +8880,67 @@ msgstr "автоматично презареждане този брой път
 
 #: operations/external/v4l.c:331
 msgid "Video4Linux Frame Source"
-msgstr ""
+msgstr "Източник на кадри за Video4Linux"
 
 #: operations/external/v4l.c:333
 msgid "Video4Linux input, webcams framegrabbers and similar devices."
 msgstr ""
+"Вход на Video4Linux, прихващане от уеб камери и други подобни устройства."
 
 #: operations/external/vector-fill.c:27
 msgid "Color of paint to use for filling."
-msgstr ""
+msgstr "Цвят за запълване."
 
 #: operations/external/vector-fill.c:30
 msgid "The fill opacity to use."
-msgstr ""
+msgstr "Плътност на запълване"
 
 #. XXX: replace with enum?
 #: operations/external/vector-fill.c:34
 msgid "Fill rule."
-msgstr ""
+msgstr "Начин на запълване."
 
 #: operations/external/vector-fill.c:35
 msgid "how to determine what to fill (nonzero|evenodd)"
 msgstr ""
+"как се определя какво да се запълни: „nonzero“ (ненулево)/„evenodd“ (четно-"
+"нечетно)"
 
 #: operations/external/vector-fill.c:38 operations/external/vector-stroke.c:39
 msgid "svg style description of transform."
-msgstr ""
+msgstr "описание на трансформацията в стила на SVG."
 
 #: operations/external/vector-fill.c:320
 msgid "Fill Path"
-msgstr ""
+msgstr "Пътека за запълване"
 
 #: operations/external/vector-fill.c:323
 msgid "Renders a filled region"
-msgstr ""
+msgstr "Изобразяване на запълнена област"
 
 #: operations/external/vector-stroke.c:28
 msgid "Color of paint to use for stroking."
-msgstr ""
+msgstr "Цвят за щриха."
 
 #: operations/external/vector-stroke.c:32
 msgid "The width of the brush used to stroke the path."
-msgstr ""
+msgstr "Широчина на четката за щриховане на пътя."
 
 #: operations/external/vector-stroke.c:36
 msgid ""
 "Opacity of stroke, note, does not behave like SVG since at the moment "
 "stroking is done using an airbrush tool."
 msgstr ""
+"Плътност на щриха. Поведението не е като в SVG, защото в момента се щрихова "
+"с аерограф."
 
 #: operations/external/vector-stroke.c:355
 msgid "Vector Stroke"
-msgstr ""
+msgstr "Векторен щрих"
 
 #: operations/external/vector-stroke.c:359
 msgid "Renders a vector stroke"
-msgstr ""
+msgstr "Изобразяване на векторен щрих"
 
 #: operations/external/webp-load.c:346
 msgid "WebP File Loader"
@@ -8902,15 +8952,15 @@ msgstr "Зареждане на изображения във формат WebP.
 
 #: operations/external/webp-save.c:29
 msgid "WebP compression quality"
-msgstr ""
+msgstr "Качество на компресията WebP"
 
 #: operations/external/webp-save.c:192
 msgid "WebP File Saver"
-msgstr ""
+msgstr "Запазване във формат WebP"
 
 #: operations/external/webp-save.c:194
 msgid "WebP image saver"
-msgstr ""
+msgstr "Запазване на изображения във формат WebP"
 
 #: operations/generated/add.c:30 operations/generated/divide.c:30
 #: operations/generated/gamma.c:30 operations/generated/multiply.c:30
