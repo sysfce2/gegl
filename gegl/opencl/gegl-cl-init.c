@@ -31,7 +31,7 @@
 #include <glib.h>
 #include <gmodule.h>
 #include <string.h>
-#ifdef _WIN64
+#ifdef _UCRT
 #define strdup _strdup
 #endif
 #include <stdio.h>

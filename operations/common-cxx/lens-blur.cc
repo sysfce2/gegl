@@ -18,7 +18,7 @@
 
 #include "config.h"
 #include <glib/gi18n-lib.h>
-#if defined(_WIN64) && !defined(read)
+#if defined(_UCRT) && !defined(read)
 #define read _read
 #endif
 

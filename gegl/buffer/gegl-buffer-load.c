@@ -27,7 +27,7 @@
 #ifdef HAVE_UNISTD_H
 #include <unistd.h>
 #endif
-#if !defined(HAVE_UNISTD_H) && defined(_WIN64)
+#if !defined(HAVE_UNISTD_H) && defined(_UCRT)
 #include <io.h>
 #define read _read
 #define close _close
@@ -42,10 +42,12 @@
 #include <glib/gprintf.h>
 #include <glib/gstdio.h>
 
-#ifdef _WIN64
+#ifdef _WIN32
 #define BINARY_FLAG O_BINARY
+#ifdef _WIN64
 #include <basetsd.h>
 typedef SSIZE_T ssize_t;
+#endif
 #else
 #define BINARY_FLAG 0
 #endif

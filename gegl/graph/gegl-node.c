@@ -2054,7 +2054,7 @@ gegl_node_get_consumers (GeglNode      *node,
         if (pasp)
           {
             pasp[i] = ((gchar *) pasp) + pasp_pos;
-#ifndef _WIN64
+#ifndef _UCRT
             strcpy (pasp[i], pad_name);
 #else
             strcpy_s (pasp[i], strlen(pad_name) + 1, pad_name);

@@ -26,7 +26,7 @@
 #ifdef HAVE_UNISTD_H
 #include <unistd.h>
 #endif
-#if !defined(HAVE_UNISTD_H) && defined(_WIN64)
+#if !defined(HAVE_UNISTD_H) && defined(_UCRT)
 #include <io.h>
 #define write _write
 #define close _close
@@ -44,10 +44,12 @@
 #include "gegl-tile.h"
 #include "gegl-buffer-index.h"
 
-#ifdef _WIN64
+#ifdef _WIN32
 #define BINARY_FLAG O_BINARY
+#ifdef _WIN64
 #include <basetsd.h>
 typedef SSIZE_T ssize_t;
+#endif
 #ifndef S_IRUSR
 #define S_IRUSR _S_IREAD
 #endif

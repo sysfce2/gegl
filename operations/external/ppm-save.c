@@ -126,7 +126,7 @@ process (GeglOperation       *operation,
   gsize     numsamples;
   gboolean  ret = FALSE;
 
-#ifndef _WIN64
+#ifndef _UCRT
   fp = (!strcmp (o->path, "-") ? stdout : fopen(o->path, "wb") );
 #else
   if (!strcmp (o->path, "-"))

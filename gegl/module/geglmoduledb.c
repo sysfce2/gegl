@@ -247,7 +247,7 @@ gegl_module_db_remove_duplicates (GeglModuleDB *db)
        while (p && p>expected && *p != 'x' ) p--;
        if (p && *p == 'x' && p[-1] == '-'){
          p--;
-#ifndef _WIN64
+#ifndef _UCRT
          strcpy (p, e);
 #else
          strcpy_s (p, (e - p + 1), e);

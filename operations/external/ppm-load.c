@@ -131,7 +131,7 @@ ppm_load_read_header(GInputStream *stream,
     gchar  header[MAX_CHARS_IN_ROW];
     gint   maxval;
     int    channel_count;
-#ifdef _WIN64
+#ifdef _UCRT
     char   errbuf[256];
 #endif
 
@@ -166,7 +166,7 @@ ppm_load_read_header(GInputStream *stream,
     img->width = strtol (header, &ptr, 10);
     if (errno)
       {
-#ifndef _WIN64
+#ifndef _UCRT
         g_warning ("Error reading width: %s", strerror(errno));
 #else
         strerror_s (errbuf, sizeof(errbuf), errno);
@@ -183,7 +183,7 @@ ppm_load_read_header(GInputStream *stream,
     img->height = strtol (ptr, &ptr, 10);
     if (errno)
       {
-#ifndef _WIN64
+#ifndef _UCRT
         g_warning ("Error reading height: %s", strerror(errno));
 #else
         strerror_s (errbuf, sizeof(errbuf), errno);

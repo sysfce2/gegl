@@ -312,8 +312,8 @@ rgbe_header_read_variables (rgbe_file *file,
             }
           else
             {
+#ifndef _UCRT
               guint linesize = lineend - data;
-#ifndef _WIN64
               strncpy (file->header.software, data,
                        MIN (linesize, G_N_ELEMENTS (file->header.software) - 1));
 #else
@@ -944,7 +944,7 @@ rgbe_save_path (const gchar *path,
   FILE        *f       = NULL;
   gboolean     success = FALSE;
 
-#ifndef _WIN64
+#ifndef _UCRT
   f = (!strcmp (path, "-") ? stdout : fopen(path, "wb"));
 #else
   if (!strcmp (path, "-"))

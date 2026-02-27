@@ -331,7 +331,7 @@ gegl_config_class_init (GeglConfigClass *klass)
     if (default_tile_cache_size < mem_min)
       default_tile_cache_size = mem_min;
 
-#ifndef _WIN64
+#ifndef _UCRT
     env = getenv ("GEGL_BUILD");
 #else
     _dupenv_s (&env, NULL, "GEGL_BUILD");
@@ -385,7 +385,7 @@ gegl_config_class_init (GeglConfigClass *klass)
   _gegl_threads = g_get_num_processors ();
   _gegl_threads = MIN (_gegl_threads, GEGL_MAX_THREADS);
 
-#ifndef _WIN64
+#ifndef _UCRT
   env = getenv ("GEGL_BUILD");
 #else
   _dupenv_s (&env, NULL, "GEGL_BUILD");
