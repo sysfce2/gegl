@@ -539,6 +539,7 @@ gegl_cl_init_load_functions (GError **error)
   return TRUE;
 }
 
+#ifndef __APPLE__
 static gboolean
 gegl_cl_gl_init_load_functions (GError **error)
 {
@@ -548,6 +549,7 @@ gegl_cl_gl_init_load_functions (GError **error)
 
   return TRUE;
 }
+#endif
 
 static gboolean
 gegl_cl_init_load_device_info (cl_platform_id   platform,
