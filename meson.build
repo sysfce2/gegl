@@ -745,6 +745,7 @@ summary(
     'Introspection'        : g_ir.found(),
     'Vala support'         : vapigen.found(),
     'Debug symbols format' : debugging_format,
+    'Relocatable'          : relocatable,
   }, section: 'Optional features'
 )
 summary(
