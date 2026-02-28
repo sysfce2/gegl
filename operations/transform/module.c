@@ -72,8 +72,8 @@ gegl_module_register (GTypeModule *module)
   dummy = gegl_op_reset_origin_register_type (module);
   dummy = gegl_op_rotate_on_center_register_type (module);
 
-  dummy ++; /* silence gcc, having it is required to avoid optimizing
-               away the _get_type calls themselves */
+  (void) dummy; /* silence gcc and clang, having it is required to avoid optimizing
+                   away the _get_type calls themselves */
 
   return TRUE;
 }
