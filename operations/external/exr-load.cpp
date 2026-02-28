@@ -182,12 +182,9 @@ fix_saturation_row (gfloat           *row_top,
                     gint              width,
                     gint              nc)
 {
-  static gint y=-1;
   gint x;
   const gfloat *neighbor1, *neighbor2, *neighbor3, *neighbor4;
   gfloat sMean, sMax, s;
-
-  y++;
 
   for (x=0; x<width; x++)
     {

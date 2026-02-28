@@ -792,7 +792,7 @@ process (GeglOperation       *operation,
 
   const gint32   *src;
   gfloat         *dst;
-  gint            dst_x, dst_y;
+  gint            dst_x;
   Direction       dir;
 
   gint            i;
@@ -874,7 +874,6 @@ process (GeglOperation       *operation,
     dst[c] = histogram_get_median (hist, c, alpha_percentile);
 
   dst_x = 0;
-  dst_y = 0;
 
   n_dst_pixels--;
   dir = LEFT_TO_RIGHT;
@@ -892,7 +891,6 @@ process (GeglOperation       *operation,
             }
           else
             {
-              dst_y++;
               src += src_stride;
               dst += dst_stride;
               dir = TOP_TO_BOTTOM;
@@ -925,7 +923,6 @@ process (GeglOperation       *operation,
             }
           else
             {
-              dst_y++;
               src += src_stride;
               dst += dst_stride;
               dir = TOP_TO_BOTTOM;
