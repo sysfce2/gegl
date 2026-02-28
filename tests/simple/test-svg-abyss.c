@@ -234,7 +234,6 @@ int main(int argc, char **argv)
 {
   gint tests_run    = 0;
   gint tests_passed = 0;
-  gint tests_failed = 0;
 
   gint i;
   return 0;
@@ -271,8 +270,6 @@ int main(int argc, char **argv)
     {
       if (test_operation (operation_names[i]))
         tests_passed++;
-      else
-        tests_failed++;
       tests_run++;
     }
 

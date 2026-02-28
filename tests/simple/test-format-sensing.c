@@ -185,7 +185,6 @@ test_opacity_gamma_004 (void)
   else \
     { \
       printf ("" #test_name " ... FAIL\n"); \
-      tests_failed++; \
     } \
   tests_run++; \
 }
@@ -194,7 +193,6 @@ int main(int argc, char *argv[])
 {
   gint tests_run    = 0;
   gint tests_passed = 0;
-  gint tests_failed = 0;
 
   gegl_init (&argc, &argv);
 

@@ -106,7 +106,6 @@ int main(int argc, char **argv)
 {
   gint tests_run    = 0;
   gint tests_passed = 0;
-  gint tests_failed = 0;
 
   gdouble scale_list[] = {5.0, 2.5, 2.0, 1.5, 1.0, 0.9, 0.5, 0.3, 0.1, 0.09, 0.05, 0.03};
   gint x_list[] = {-16, 0, 15};
@@ -130,8 +129,6 @@ int main(int argc, char **argv)
             {
               if (test_scale (scale_list[j], x_list[i], 0, format_list[k]))
                 tests_passed++;
-              else
-                tests_failed++;
               tests_run++;
             }
         }

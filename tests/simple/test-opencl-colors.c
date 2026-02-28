@@ -54,10 +54,6 @@ test_opencl_conversion (const char *in_format_name,
       fflush(stdout); \
       tests_passed++; \
     } \
-  else \
-    { \
-      tests_failed++; \
-    } \
   tests_run++; \
 }
 
@@ -65,7 +61,6 @@ int main(int argc, char *argv[])
 {
   gint tests_run    = 0;
   gint tests_passed = 0;
-  gint tests_failed = 0;
 
   gegl_init (&argc, &argv);
 
