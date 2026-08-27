@@ -339,13 +339,21 @@ gegl_buffer_save (GeglBuffer          *buffer,
       }
   }
 
+  /* A buffer with no tiles has no index to point at. 0 is how the format
+   * ends the chain of entries, and read_block() stops on it; leaving the
+   * header pointing just past itself makes the loader read past the end
+   * of the file instead.
+   */
+  if (info->tiles == NULL)
+    info->header.next = 0;
+
   /* save the header */
   {
     ssize_t ret = write (info->o, &info->header, sizeof (GeglBufferHeader));
     if (ret != -1)
       info->offset += ret;
   }
-  g_assert (info->offset == info->header.next);
+  g_assert (info->tiles == NULL || info->offset == info->header.next);
 
   /* save the index */
   {
