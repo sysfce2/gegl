@@ -668,6 +668,11 @@ gegl_pub_deps = [
   babl,
 ]
 
+gegl_lib_deps = gegl_pub_deps + [ gegl_npd_lib ]
+if opencl.found()
+  gegl_lib_deps += [ opencl ]
+endif
+
 pkgconfig.generate(gegl_lib,
   filebase: 'gegl-' + api_version,
   name: 'GEGL',
@@ -678,7 +683,7 @@ pkgconfig.generate(gegl_lib,
   # not be removed, even though adding it like this is not so proper. If
   # one wants to clean up this dependency, a proper port must be done
   # first so that using application still build and don't lose features.
-  libraries: gegl_pub_deps + [ gegl_npd_lib ],
+  libraries: gegl_lib_deps,
   subdirs: api_name,
 )
 
