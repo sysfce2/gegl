@@ -22,10 +22,14 @@
 #include <glib-object.h>
 
 #include "gegl-cl-version.h"
-#ifdef BUILTIN_OPENCL
-#include "CL/opencl.h"
-#else
+#if defined(__has_include)
+#if __has_include(<CL/opencl.h>)
 #include <CL/opencl.h>
+#else
+#include "CL/opencl.h"
+#endif
+#else
+#include "CL/opencl.h"
 #endif
 
 G_BEGIN_DECLS
