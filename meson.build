@@ -397,6 +397,7 @@ if not opencl.found()
   #see gegl/opencl/meson.build
   message('using built-in OpenCL headers')
 endif
+config.set('BUILTIN_OPENCL', opencl.found() ? 1 : false)
 
 # Required libraries eventually provided in subprojects/ subdir
 poly2tri_c = dependency('poly2tri-c',
