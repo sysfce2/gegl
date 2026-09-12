@@ -8,6 +8,7 @@ gegl_sources += files(
 )
 
 if not opencl.found()
+  #vendored opencl headers as fallback
   upstream_opencl_headers = files (
     'CL/cl.h',
     'CL/cl_d3d10.h',
@@ -29,7 +30,6 @@ if not opencl.found()
     'CL/opencl.h',
     'CL/opencl.hpp',
   )
-  #vendored opencl headers as fallback
   install_headers(upstream_opencl_headers,
     subdir: api_name / 'opencl' / 'CL'
   )
